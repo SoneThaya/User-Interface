@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,21 +92,34 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -49,18 +130,132 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+body {
+	margin: 0 auto;
+}
+.body-container {
+	width: 90%;
+}
+.container {
+	width: 90%;
+	align-self: center;
+	margin: 5%;
+}
+/* upper section nav, title */
+nav {
+	background-color: aqua;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	z-index: auto;
+	font-family: 'Indie Flower', cursive;
+}
+nav a {
+	margin: 5%;
+	align-items: center;
+	color: lightgrey;
+	display: inline;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+nav a:hover {
+	color: white;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content {
+	padding-top: 102px;
+}
+.main-title {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+h1 {
+	font-size: 72px;
+	text-align: center;
+}
+button {
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	background-color: white;
+}
+button:hover {
+	background-color: aqua;
+}
+.title,
+.main-image {
+	margin: 2% 10% 2% 10%;
+	display: inline-block;
+	width: 20%;
+	align-items: center;
+	text-align: center;
+}
+
+/* middle section features, about, image, services, products, vision*/
+#features,
+#about {
+	margin: 25px;
+	display: inline-block;
+	width: 40%;
+	align-items: center;
+}
+
+.middle-img {
+	width: 100%;
+}
+.top-section {
+	padding-top: 10px;
+}
+#services,
+#product,
+#vision {
+	margin: 25px;
+	display: inline-block;
+	width: 25%;
+	align-items: center;
+}
+
+/* bottom section - contact, address, footer*/
+#contact {
+	padding-top: 30px;
+}
+
+.phone-email {
+	line-height: 2;
+}
+
+footer {
+	text-align: center;
+}
