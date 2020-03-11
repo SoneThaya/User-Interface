@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Great Idea!</title>
+  <title>Products Page</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -16,37 +16,20 @@
 </head>
 
   <body>
-    <nav id="myHeader" class="myHeader">
-      <a href="#services">Services</a>
-      <a href="product.html">Product</a>
-      <a href="#vision">Vision</a>
-      <a href="#feature">Features</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    
-     <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
-    </nav>
-<div class="body-container">
 
+<nav class="myHeader" id="myHeader">
+  <a href="#services">Services</a>
+  
+  <a href="#vision">Vision</a>
+  <a href="#feature">Features</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+
+  <a href="index.html"><img class="logo" src="img/logo.png" alt="Great Idea! Company logo."></a>
+</nav>
 
 <div class="container">
-  <div class="main-title">
-    <div class="title">
-        <h1>
-          <p>Innovation</p>
-          <p>On</p>
-          <p>Demand</p>
-        </h1>
-      
-      <button>Get Started</button>
-    </div>
-
-      <div class="main-image">
-        <img src="img/header-img.png" alt="Image of a code snippet.">
-    </div>
-
-  </div>
-<hr />
+  
 
 <div class="top-section">
   <section id="features">
@@ -96,9 +79,9 @@
 <footer>
   &copy; Copyright Great Idea! 2018
 </footer>
-</div>
-  <script>
-    window.onscroll = function() {myFunction()};
+
+<script>
+  window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("myHeader");
@@ -108,12 +91,12 @@ var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
 }
-  </script>
+}
+</script>
   </body>
 </html>
